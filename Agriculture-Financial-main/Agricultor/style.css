@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Alatsi&family=Merriweather:wght@300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Alatsi', sans-serif;
+    font-family: 'Merriweather', serif;  
+}
+body{
+    background-color: #E6E6E6;
+    height: 100vh;
+}
+html{
+    scroll-behavior: smooth;
+}
+.interface{
+    margin: 0;
+}
+.flex{
+    display: flex;
+}
+.menu a{
+    padding: 15px 40px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    background-color: #016736;
+    color: #F7F7F7;
+    box-shadow: 0px 5px 8px yellowgreen;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .5s;
+    text-decoration: none;
+}
+.menu a:hover{
+    background-color: #F7F7F7;
+    color: #016736;
+    box-shadow: 0px 0px 8px green;
+    border: 0px solid yellowgreen;
+}
+/*CABEÇALHO*/
+header{
+    padding: 10px 4%;
+}
+header>.interface{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header nav.menu ul li{
+    display: inline-block;
+    padding: 0 50px;
+}
+header img{
+    width: 10vw;
+    z-index: -1;
+}
+/*Topo do site*/
+.inicio{
+    height: 75%;
+    background-image: url(img/Agricultura.edit.jpg);
+    background-position: 20% 0%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    box-shadow: 0px 0px 20px yellowgreen;
+}
+.texto{
+   padding-right: 60rem;
+   padding-left: 150px;
+}
+.texto h1{
+    letter-spacing: 1px;
+    color: #F7F7F7;
+    font-size: 35px;
+    line-height: 50px;
+}
+.texto span{
+    color: greenyellow;
+}
+.texto hr{
+    margin-top: 15px;
+    border: 1px solid #F7F7F7;
+}
+/*Sobre*/
+.sobre {
+    height: 80%;
+    background-image: url(img/sla\ 230.jpg);
+    background-position: 0 40% ;
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6rem;
+    margin-bottom: 10rem;
+    box-shadow: 0px 0px 20px yellowgreen;
+}
+.texto_sobre{
+    padding-left: 61rem;
+    padding-right: 13rem;
+   padding-bottom: 2rem;
+   text-align:center;
+   letter-spacing: 1px;
+}
+.texto_sobre h1{
+    color: #F7F7F7;
+    font-size: 22px;
+    padding-bottom: 20px;
+}
+.texto_sobre p{
+    font-family: 'Merriweather', serif; 
+    color: #F7F7F7;
+    font-size: 18px;
+    word-spacing: 5px;
+}
+/*Serviços*/
+.serviços{
+    padding: 70px ;
+    text-align: center;
+    padding-bottom: 5rem;
+}
+.serviços .flex{
+    gap: 60px;
+    align-items: center;
+    justify-content: center;
+}
+.serviços h2{
+    font-size: 40px;
+    color: #016736;
+    padding: 20px 0;
+    border-bottom: 2px solid #016736;
+    letter-spacing: 1px;
+}
+.box_svc{
+    background-color: #016736;
+    color: #F7F7F7;
+    padding: 100px 50px 100px;
+    border-radius: 20px;
+    margin-top: 45px;
+    border: 2px solid yellowgreen;
+    box-shadow: 0px 0px 10px green;
+    transition: .5s;
+}
+.box_svc:hover{
+    transform: scale(1.10);
+    transition: .5s;
+}
+.box_svc i{
+    font-size: 70px;
+    color: #F7F7F7;
+}
+.box_svc h3{
+    font-size: 28px;
+    margin: 15px 0;
+    letter-spacing: 1px;
+}
+.box_svc button{
+    margin-top: 30px;
+    padding: 15px 25px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    background-color: #F7F7F7;
+    color: #016736;
+    border: 2px solid yellowgreen;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .4s;
+}
+.box_svc button:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px yellowgreen;
+    transition: .4s;
+}
+.box_svc button i{
+    font-size: 18px;
+    color: #016736;
+}
+/*CONtato*/
+.contato h2{
+    padding-top: 10rem;
+    padding-bottom: 30px;
+    font-size: 50px;
+    color: #016736;
+    text-align: center;
+    font-weight: 500;
+}
+.contato .flex{
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10rem;
+}
+.numeros{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    font-size: 35px;
+    color: #016736;
+    border-right: 2px solid yellowgreen;
+    padding: 50px;
+}
+.numeros a{
+    color:#016736;
+}
+.formulario p{
+    font-size: 35px;
+    color: #016736;
+    text-align: center;
+    padding: 20px;
+}
+form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 60px ;
+    padding-top: 10px;
+    gap: 20px;
+    color: #F7F7F7;
+}
+form input{
+    background-color: #016736;
+    padding: 25px 45px ;
+    border-radius: 30px;
+    border: 2px solid yellowgreen;
+}
+form .btn-enviar {
+    text-align: center;
+}
+.btn-enviar input {
+    padding: 12px 15px;
+    background-color: #016736;
+    border: 2px solid yellowgreen;
+    border-radius: 30px;
+    color: #F7F7F7;
+    cursor: pointer;
+    font-size: 15px;
+    transition: .5s;
+}
+form input::placeholder{
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.64);
+}
+form .btn-enviar input:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 5px yellowgreen;
+    transition: .5s;
+}
+.bi-telephone{
+    color: #1F1F1F;
+    font-size: 40px;
+}
+.bi-whatsapp{
+    color: #1f1f1fca;
+    font-size: 40px;
+}
+.bi-instagram{
+    color: #1f1f1fca;
+    font-size: 40px;
+}
+.bi-envelope{
+    color: #1f1f1fca;
+    font-size: 40px;
+}
+/*FOoTER*/
+footer{
+    border-top: 1px solid #1F1F1F;
+    padding: 10px 4%;
+    display: flex;
+    justify-content: space-between;
+}
+footer img{
+    width: 9vw;
+}
+footer h1{
+    color: #016736;
+    margin-top: 40px;
+    text-align: center;
+}
+footer button{
+    margin-top: 20px;
+    cursor: pointer;
+    border: 2px solid #1F1F1F;
+    background-color: #016736;
+    padding: 5px 5px;
+    border-radius: 10px;
+}
+footer button .bi-whatsapp{
+    color: white;
+}
+footer button .bi-instagram{
+    color: white;
+}
+@media screen and (max-width:1020px){
+    header>.interface{
+        display: none;
+    }
+    .flex{
+        flex-direction: column;
+    }
+    .inicio{
+        display: none;
+    }
+    .sobre{
+        display: none;
+    }
+    .serviços{
+        padding: 20px 4%;
+    }
+    .numeros{
+        font-size: 20px;
+    }
+    .formulario p{
+        padding-top: 250px;
+    }
+    footer img{
+        width: 150px;
+        justify-content: center;
+    }
+    footer h1{
+        display: none;
+    }
+}
