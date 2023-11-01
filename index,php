@@ -1,0 +1,15 @@
+<?php
+if (isset($_POST['submit']))
+{
+
+include_once('config.php');
+
+$nome_user = $_POST('nome');
+$cpf_user = $_POST('cpf');
+$numero_user = $_POST('telefone');
+
+
+$res = mysqli_query($conect, "INSERT INTO tb_user(nome_user,cpf_user,numero_user) 
+    VALUES('$nome_user','$cpf_user','$numero_user')"   );
+}
+?>
